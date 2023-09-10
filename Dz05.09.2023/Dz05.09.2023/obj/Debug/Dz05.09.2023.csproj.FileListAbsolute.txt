@@ -5,3 +5,11 @@ C:\Users\User\Desktop\Dz05.09.2023\Dz05.09.2023\obj\Debug\Dz05.09.2023.csproj.As
 C:\Users\User\Desktop\Dz05.09.2023\Dz05.09.2023\obj\Debug\Dz05.09.2023.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Dz05.09.2023\Dz05.09.2023\obj\Debug\Dz05.09.2023.exe
 C:\Users\User\Desktop\Dz05.09.2023\Dz05.09.2023\obj\Debug\Dz05.09.2023.pdb
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\Dz05.09.2023\obj\Debug\Dz05.09.2023.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\Dz05.09.2023\obj\Debug\Dz05.09.2023.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\Dz05.09.2023\obj\Debug\Dz05.09.2023.exe
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\Dz05.09.2023\obj\Debug\Dz05.09.2023.pdb
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\Dz05.09.2023\bin\Debug\Dz05.09.2023.exe.config
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\Dz05.09.2023\bin\Debug\Dz05.09.2023.exe
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\Dz05.09.2023\bin\Debug\Dz05.09.2023.pdb
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\Dz05.09.2023\obj\Debug\Dz05.09.2023.csproj.CopyComplete

@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\MyDll\MyDll\bin\Debug\MyDll.dll
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\MyDll\MyDll\bin\Debug\MyDll.pdb
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\MyDll\MyDll\obj\Debug\MyDll.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\MyDll\MyDll\obj\Debug\MyDll.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\MyDll\MyDll\obj\Debug\MyDll.dll
+C:\Users\User\Desktop\MVP_projects\Dz05.09.2023\MyDll\MyDll\obj\Debug\MyDll.pdb
