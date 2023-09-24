@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\MVP_projects\\Chess\\Chess\\Chess.csproj": {}
+    "C:\\Users\\User\\Desktop\\Authors and books\\Authors and books\\Authors and books.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\MVP_projects\\Chess\\Chess\\Chess.csproj": {
+    "C:\\Users\\User\\Desktop\\Authors and books\\Authors and books\\Authors and books.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\MVP_projects\\Chess\\Chess\\Chess.csproj",
-        "projectName": "Chess",
-        "projectPath": "C:\\Users\\User\\Desktop\\MVP_projects\\Chess\\Chess\\Chess.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Authors and books\\Authors and books\\Authors and books.csproj",
+        "projectName": "Authors and books",
+        "projectPath": "C:\\Users\\User\\Desktop\\Authors and books\\Authors and books\\Authors and books.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\MVP_projects\\Chess\\Chess\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Authors and books\\Authors and books\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

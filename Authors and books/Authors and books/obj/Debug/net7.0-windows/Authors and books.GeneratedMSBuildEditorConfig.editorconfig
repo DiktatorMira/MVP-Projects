@@ -13,5 +13,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Chess
-build_property.ProjectDir = C:\Users\User\Desktop\MVP_projects\Chess\Chess\
+build_property.RootNamespace = Authors_and_books
+build_property.ProjectDir = C:\Users\User\Desktop\Authors and books\Authors and books\
