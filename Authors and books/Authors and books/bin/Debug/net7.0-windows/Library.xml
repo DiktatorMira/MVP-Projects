@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LibraryData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <authors />
-  <books />
+  <authors>
+    <Author>
+      <author_name>5432</author_name>
+    </Author>
+    <Author>
+      <author_name>2уац</author_name>
+    </Author>
+  </authors>
+  <books>
+    <Book>
+      <book_name>шишка</book_name>
+      <author_of_book>
+        <author_name>5432</author_name>
+      </author_of_book>
+    </Book>
+    <Book>
+      <book_name>метла</book_name>
+      <author_of_book>
+        <author_name>5432</author_name>
+      </author_of_book>
+    </Book>
+    <Book>
+      <book_name>мандарин</book_name>
+      <author_of_book>
+        <author_name>2уац</author_name>
+      </author_of_book>
+    </Book>
+  </books>
 </LibraryData>

@@ -59,16 +59,16 @@ namespace Authors_and_books
         }
         private void menu23_Click(object sender, EventArgs e)
         {
-            using (var editAuthor = new EditAuthor())
+            using (var editAuthor = new EditAuthor(authors.SelectedItem.ToString()))
             {
                 if (editAuthor.ShowDialog() == DialogResult.OK) EditAuthor?.Invoke(editAuthor.oldname, editAuthor.newname);
             }
         }
         private void menu24_Click(object sender, EventArgs e)
         {
-            using (var addBook = new AddBook())
+            using (var addBook = new AddBook(authors.SelectedItem.ToString()))
             {
-                if (addBook.ShowDialog() == DialogResult.OK) AddBook?.Invoke(addBook.authorname, addBook.bookname);
+                if (addBook.ShowDialog() == DialogResult.OK) AddBook?.Invoke(authors.SelectedItem.ToString(), addBook.bookname);
             }
         }
         private void menu25_Click(object sender, EventArgs e)
@@ -83,7 +83,7 @@ namespace Authors_and_books
         }
         private void menu26_Click(object sender, EventArgs e)
         {
-            using (var editBook = new EditBook())
+            using (var editBook = new EditBook(books.SelectedItem.ToString()))
             {
                 if (editBook.ShowDialog() == DialogResult.OK) EditBook?.Invoke(editBook.oldname, editBook.newname);
             }

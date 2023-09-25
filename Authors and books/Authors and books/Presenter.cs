@@ -9,7 +9,6 @@ namespace Authors_and_books {
     public class Presenter {
         private readonly IView view;
         private Model model;
-
         public Presenter(IView view) {
             this.view = view;
             model = new Model();
@@ -35,7 +34,7 @@ namespace Authors_and_books {
             }
             else Update();
         }
-        private void AddAutor(string authorname){
+        private void AddAutor(string authorname) {
             if (model.authors_list.Find(i => i.author_name == authorname) != null) view.Error("Такой автор существует!");
             else {
                 Author temp = new Author();
@@ -53,7 +52,7 @@ namespace Authors_and_books {
             else view.Error("Такого автора не существует!");
             Update();
         }
-        private void EditAuthor(string oldname, string newname){
+        private void EditAuthor(string oldname, string newname) {
             Author temp = model.authors_list.FirstOrDefault(i => i.author_name == oldname);
             if (temp != null)  {
                 temp.author_name = newname;

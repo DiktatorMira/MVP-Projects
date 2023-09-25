@@ -23,8 +23,12 @@ namespace Authors_and_books
         private void button1_Click(object sender, EventArgs e)
         {
             authorname = textBox1.Text;
+            DialogResult = DialogResult.OK;
             Close();
         }
-        private void button2_Click(object sender, EventArgs e) => Close();
+        private void button2_Click(object sender, EventArgs e) {
+            DialogResult = DialogResult.Cancel;
+            Close();
+        }
     }
 }

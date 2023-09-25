@@ -14,10 +14,10 @@ namespace Authors_and_books
     {
         public string oldname { get; set; }
         public string newname { get; set; }
-        public EditAuthor()
+        public EditAuthor(string name)
         {
             InitializeComponent();
-            textBox1.Text = oldname;
+            textBox1.Text = name;
             textBox1.Select();
             MaximizeBox = false;
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -26,8 +26,13 @@ namespace Authors_and_books
         private void button1_Click(object sender, EventArgs e)
         {
             newname = textBox1.Text;
+            DialogResult = DialogResult.OK;
             Close();
         }
-        private void button2_Click(object sender, EventArgs e) => Close();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+            Close();
+        }
     }
 }
