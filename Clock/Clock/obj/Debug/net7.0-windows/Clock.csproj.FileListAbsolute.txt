@@ -1,0 +1,16 @@
+C:\Users\User\Desktop\Clock\Clock\bin\Debug\net7.0-windows\Clock.exe
+C:\Users\User\Desktop\Clock\Clock\bin\Debug\net7.0-windows\Clock.deps.json
+C:\Users\User\Desktop\Clock\Clock\bin\Debug\net7.0-windows\Clock.runtimeconfig.json
+C:\Users\User\Desktop\Clock\Clock\bin\Debug\net7.0-windows\Clock.dll
+C:\Users\User\Desktop\Clock\Clock\bin\Debug\net7.0-windows\Clock.pdb
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\Clock.Form1.resources
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\Clock.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\Clock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\Clock.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\Clock.AssemblyInfo.cs
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\Clock.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\Clock.dll
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\refint\Clock.dll
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\Clock.pdb
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\Clock.genruntimeconfig.cache
+C:\Users\User\Desktop\Clock\Clock\obj\Debug\net7.0-windows\ref\Clock.dll
