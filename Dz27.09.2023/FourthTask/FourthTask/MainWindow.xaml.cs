@@ -33,9 +33,13 @@ namespace FourthTask {
             grid1.Height = Height - wrap1.Height;
             wrap2.Width = Width / 2 - 10;
             textBox.Width = Width / 2 - 10;
-            if (Height <= 375) {
-                grid1.Height = Height - (wrap1.Height * 1.7);
+            if (Width <= 650 && Width > 375) {
+                grid1.Height = Height - (wrap1.Height * 1.5);
                 textBox.Height = Height - (wrap1.Height * 1.5);
+            }
+            else if (Width <= 375) {
+                grid1.Height = Height - (wrap1.Height * 2);
+                textBox.Height = Height - (wrap1.Height * 2);
             }
             else {
                 grid1.Height = Height - wrap1.Height;

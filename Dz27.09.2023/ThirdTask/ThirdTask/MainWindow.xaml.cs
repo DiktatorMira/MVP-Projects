@@ -21,7 +21,6 @@ namespace ThirdTask {
         double[] arr = new double[9];
         public MainWindow() {
             InitializeComponent();
-            WindowStartupLocation = WindowStartupLocation.CenterScreen;
         }
         private void Button_Click(object sender, RoutedEventArgs e) {
             textBoxes = new List<TextBox>() { text1, text2, text3, text4, text5, text6, text7, text8, text9 };

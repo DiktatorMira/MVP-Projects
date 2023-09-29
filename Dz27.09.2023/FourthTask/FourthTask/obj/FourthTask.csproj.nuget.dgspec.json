@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\FourthTask\\FourthTask\\FourthTask.csproj": {}
+    "C:\\Users\\User\\Desktop\\C#_projects\\Dz27.09.2023\\FourthTask\\FourthTask\\FourthTask.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\FourthTask\\FourthTask\\FourthTask.csproj": {
+    "C:\\Users\\User\\Desktop\\C#_projects\\Dz27.09.2023\\FourthTask\\FourthTask\\FourthTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\FourthTask\\FourthTask\\FourthTask.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\C#_projects\\Dz27.09.2023\\FourthTask\\FourthTask\\FourthTask.csproj",
         "projectName": "FourthTask",
-        "projectPath": "C:\\Users\\User\\Desktop\\FourthTask\\FourthTask\\FourthTask.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\C#_projects\\Dz27.09.2023\\FourthTask\\FourthTask\\FourthTask.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\FourthTask\\FourthTask\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\C#_projects\\Dz27.09.2023\\FourthTask\\FourthTask\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
