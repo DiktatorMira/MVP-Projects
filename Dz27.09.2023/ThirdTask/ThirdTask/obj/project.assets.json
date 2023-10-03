@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\ThirdTask\\ThirdTask\\ThirdTask.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\C#_projects\\Dz27.09.2023\\ThirdTask\\ThirdTask\\ThirdTask.csproj",
       "projectName": "ThirdTask",
-      "projectPath": "C:\\Users\\User\\Desktop\\ThirdTask\\ThirdTask\\ThirdTask.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\C#_projects\\Dz27.09.2023\\ThirdTask\\ThirdTask\\ThirdTask.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\ThirdTask\\ThirdTask\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\C#_projects\\Dz27.09.2023\\ThirdTask\\ThirdTask\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
