@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xmHAnlcannQAWi7t/WJge85jIMkb3gk4dJru9vxoaJ691AH4ViMzYrXrFfz94R3qPHJJ9Tv/WCTAslhuWRGR1w==",
+  "dgSpecHash": "vIiT67lJRQ5JRxf95s74uxeN/TX6AykAqpmpyrflsSNJIL+u64ip1DEJ7s7bu/lducVeb4NeOiXEmtKzkDwV4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\2048\\2048\\2048.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\C#_projects\\2048\\2048\\2048.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
