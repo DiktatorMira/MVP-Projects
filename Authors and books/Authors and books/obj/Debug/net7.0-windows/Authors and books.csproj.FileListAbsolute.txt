@@ -38,3 +38,23 @@ C:\Users\User\Desktop\MVP_projects\Authors and books\Authors and books\obj\Debug
 C:\Users\User\Desktop\MVP_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors and books.pdb
 C:\Users\User\Desktop\MVP_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors and books.genruntimeconfig.cache
 C:\Users\User\Desktop\MVP_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\ref\Authors and books.dll
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\bin\Debug\net7.0-windows\Authors and books.exe
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\bin\Debug\net7.0-windows\Authors and books.deps.json
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\bin\Debug\net7.0-windows\Authors and books.runtimeconfig.json
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\bin\Debug\net7.0-windows\Authors and books.dll
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\bin\Debug\net7.0-windows\Authors and books.pdb
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors_and_books.AddAuthor.resources
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors_and_books.AddBook.resources
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors_and_books.EditAuthor.resources
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors_and_books.EditBook.resources
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors_and_books.Form1.resources
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors and books.csproj.GenerateResource.cache
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors and books.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors and books.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors and books.AssemblyInfo.cs
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors and books.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors and books.dll
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\refint\Authors and books.dll
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors and books.pdb
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\Authors and books.genruntimeconfig.cache
+C:\Users\User\Desktop\C#_projects\Authors and books\Authors and books\obj\Debug\net7.0-windows\ref\Authors and books.dll
