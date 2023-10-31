@@ -54,10 +54,10 @@ namespace ColorGenerator {
         private void Remove() => color_list.Remove(color_list[index]);
         private bool CanRemove() { return index != -1; }
     }
-    public class ColorViewModel : VMBase, IEquatable<ColorViewModel> {
+    public class ColorViewModel : VMBase {
         private ColorModel color;
         private bool check1, check2, check3, check4;
-        private int alpha, red, green, blue;
+        private byte alpha, red, green, blue;
         public bool Check1 {
             get { return check1; }
             set {
@@ -86,7 +86,7 @@ namespace ColorGenerator {
                 OnPropertyChanged(nameof(Check4));
             }
         }
-        public int Alpha {
+        public byte Alpha {
             get { return alpha; }
             set {
                 if(alpha != value) {
@@ -96,7 +96,7 @@ namespace ColorGenerator {
                 }
             }
         }
-        public int Red {
+        public byte Red {
             get { return red; } 
             set {
                 if (red != value) {
@@ -106,7 +106,7 @@ namespace ColorGenerator {
                 }
             }
         }
-        public int Green {
+        public byte Green {
             get { return green; }
             set {
                 if(green != value) {
@@ -116,7 +116,7 @@ namespace ColorGenerator {
                 }
             }
         }
-        public int Blue {
+        public byte Blue {
             get { return blue; }
             set {
                 if(blue != value) {
@@ -134,16 +134,11 @@ namespace ColorGenerator {
             }
         }
         private void SetColor() {
-            if (color == null) color = new ColorModel(" "); 
-            Name = System.Windows.Media.Color.FromArgb((byte)Alpha, (byte)Red, (byte)Green, (byte)Blue).ToString();
+            if (color == null) color = new ColorModel(" ");
+            Name = System.Windows.Media.Color.FromArgb(Alpha, Red, Green, Blue).ToString();
         }
         public ColorViewModel Clone() {
             return new ColorViewModel { Alpha = Alpha, Red = Red, Green = Green, Blue = Blue };
         }
-        public bool Equals(ColorViewModel other) {
-            if (other is null) return false;
-            return Alpha == other.Alpha && Red == other.Red && Green == other.Green && Blue == other.Blue;
-        }
-        public override bool Equals(object obj) { return Equals(obj as ColorViewModel); }
     }
 }

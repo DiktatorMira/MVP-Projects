@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\User\Desktop\ColorGenerator\ColorGenerator\obj\Debug\net7.0-windows\
+C:\Users\User\Desktop\C#_projects\ColorGenerator-MVVM\ColorGenerator\obj\Debug\net7.0-windows\
 ColorGenerator
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\User\Desktop\ColorGenerator\ColorGenerator\App.xaml
+C:\Users\User\Desktop\C#_projects\ColorGenerator-MVVM\ColorGenerator\App.xaml
 11407045341
 
 81988469192
 198-759771931
 MainWindow.xaml;
 
-False
+True
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6TgbqdYRR5f+v23tG6NQUE80676UzHEMXrK8DqHxrUh/j8mDZD6VlzJHZysbSELfXp8y6rKJSIyXaolobIEByA==",
+  "dgSpecHash": "Jn15in0AztMhQYoOpZONdZdxFj9PH0OOhm/KI6UQh2AqRNKtObISCOSEyDiIbSLk3kgLMBPWZLVENHd2rV/giQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\ColorGenerator\\ColorGenerator\\ColorGenerator.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\C#_projects\\ColorGenerator-MVVM\\ColorGenerator\\ColorGenerator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
