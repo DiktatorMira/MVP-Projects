@@ -1,0 +1,89 @@
+﻿<Window x:Class="Notebook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notebook"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Записная книжка" Background="#262626" 
+        MinHeight = "300" MinWidth="450" Height="300" Width="650" Icon="/AppIcon.png">
+    <Window.Resources>
+        <local:MainVM x:Key="ViewModel"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource ViewModel}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Menu Name="menu" Style="{StaticResource MenuStyle}" Grid.ColumnSpan="2">
+                <MenuItem Style="{StaticResource MenuItemStyle}" 
+                Command="{Binding LoadCommand}" Header="Загрузить из файла"/>
+                <MenuItem Style="{StaticResource MenuItemStyle}"
+                Command="{Binding SaveCommand}" Header="Сохранить в файл"/>
+                <MenuItem Style="{StaticResource MenuItemStyle}" 
+                Command="{Binding AddCommand}" Header="Добавить"/>
+                <MenuItem Style="{StaticResource MenuItemStyle}" 
+                Command="{Binding ChangeCommand}" Header="Изменить"/>
+                <MenuItem Style="{StaticResource MenuItemStyle}" 
+                Command="{Binding RemoveCommand}" Header="Удалить"/>
+            </Menu>
+            <Label Content="Введите ФИО:" Style="{StaticResource LabelStyle}" Grid.Row="1"/>
+            <TextBox Style="{StaticResource TextBoxStyle}" Text="{Binding current.Fio}" Grid.Row="2"/>
+            <Label Content="Введите адресс:" Style="{StaticResource LabelStyle}" Grid.Row="3"/>
+            <TextBox Style="{StaticResource TextBoxStyle}" Text="{Binding current.Address}" Grid.Row="4"/>
+            <Label Content="Введите телефон:" Style="{StaticResource LabelStyle}" Grid.Row="5"/>
+            <TextBox Style="{StaticResource TextBoxStyle}" Text="{Binding current.Phone}" Grid.Row="6"/>
+            <Button Name="change" Style="{StaticResource ButtonStyle}" Command="{Binding SaveChangeCommand}" 
+            Content="Сохранить изменения" Grid.Row="7"/>
+            <ListBox Name="listBox" Style="{StaticResource ListBoxStyle}" ItemsSource="{Binding persons}" 
+            SelectedIndex="{Binding SelectedIndex}" Grid.Row="1" Grid.Column="1" Grid.RowSpan="7">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                    <Border BorderThickness="2" BorderBrush="#4a4a4a"  CornerRadius="5" Margin="1">
+                            <StackPanel>
+                                <Label Style="{StaticResource LabelStyle}" Content="{Binding Fio}"/>
+                                <Label Style="{StaticResource LabelStyle}" Content="{Binding Address}"/>
+                                <Label Style="{StaticResource LabelStyle}" Content="{Binding Phone}"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListBoxItem">
+                                    <Border x:Name="border" BorderThickness="2" CornerRadius="5">
+                                        <ContentPresenter/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <Setter TargetName="border" Property="Background" Value="#4a4a4a"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+            </ListBox>
+        </Grid>
+    </Grid>
+</Window>
