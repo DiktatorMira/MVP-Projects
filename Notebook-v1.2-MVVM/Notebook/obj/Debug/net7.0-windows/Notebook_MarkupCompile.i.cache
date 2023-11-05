@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\User\Desktop\Notebook-v1.1\Notebook\obj\Debug\net7.0-windows\
+C:\Users\User\Desktop\C#_projects\Notebook-v1.2-MVVM\Notebook\obj\Debug\net7.0-windows\
 Notebook
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\User\Desktop\Notebook-v1.1\Notebook\App.xaml
+C:\Users\User\Desktop\C#_projects\Notebook-v1.2-MVVM\Notebook\App.xaml
 11407045341
 
 91872819011
 199-1358152737
 MainWindow.xaml;
 
-True
+False
 

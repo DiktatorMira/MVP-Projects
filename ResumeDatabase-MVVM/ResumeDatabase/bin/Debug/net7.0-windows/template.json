@@ -1,0 +1,71 @@
+[
+  {
+    "Check1": false,
+    "Check2": false,
+    "Check3": false,
+    "Model": {
+      "Fio": "Червоный Данила Юрьевич",
+      "Age": "19",
+      "FamilyStatus": "Слава богу свободен",
+      "Address": "Одесса",
+      "Email": "dychervony@gmail.com",
+      "IsInfo": "Да",
+      "IsLanguage": "Да",
+      "IsCommunicate": "Нет"
+    },
+    "Fio": "Червоный Данила Юрьевич",
+    "Age": "19",
+    "FamilyStatus": "Слава богу свободен",
+    "Address": "Одесса",
+    "Email": "dychervony@gmail.com",
+    "IsInfo": "Да",
+    "IsLanguage": "Да",
+    "IsCommunicate": "Нет"
+  },
+  {
+    "Check1": false,
+    "Check2": false,
+    "Check3": false,
+    "Model": {
+      "Fio": "Волков Данила Андреевич",
+      "Age": "почти 20",
+      "FamilyStatus": "Не свободен",
+      "Address": "Одесса",
+      "Email": "не_знаю@gmail.com",
+      "IsInfo": "Да",
+      "IsLanguage": "Нет",
+      "IsCommunicate": "Нет"
+    },
+    "Fio": "Волков Данила Андреевич",
+    "Age": "почти 20",
+    "FamilyStatus": "Не свободен",
+    "Address": "Одесса",
+    "Email": "не_знаю@gmail.com",
+    "IsInfo": "Да",
+    "IsLanguage": "Нет",
+    "IsCommunicate": "Нет"
+  },
+  {
+    "Check1": false,
+    "Check2": false,
+    "Check3": false,
+    "Model": {
+      "Fio": "Моторина Николь Павловна",
+      "Age": "20",
+      "FamilyStatus": "Не свободна",
+      "Address": "Одесса",
+      "Email": "тоже_не_знаю@gmail.com",
+      "IsInfo": "Да",
+      "IsLanguage": "Да",
+      "IsCommunicate": "Нет"
+    },
+    "Fio": "Моторина Николь Павловна",
+    "Age": "20",
+    "FamilyStatus": "Не свободна",
+    "Address": "Одесса",
+    "Email": "тоже_не_знаю@gmail.com",
+    "IsInfo": "Да",
+    "IsLanguage": "Да",
+    "IsCommunicate": "Нет"
+  }
+]
