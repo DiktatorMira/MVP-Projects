@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         Background="#262626" 
         Title="База данных резюме"
-        MinHeight="500"
+        MinHeight="500" MinWidth="450"
         Height="500" Width="600" Icon="/AppIcon.png">
     <Window.Resources>
         <local:MainViewModel x:Key="ViewModel"/>
@@ -44,7 +44,7 @@
             <CheckBox Style="{StaticResource CheckBoxStyle}"
             IsChecked="{Binding Current.Check3,Mode=TwoWay}" Content="Высокая команикабельность"/>
         </StackPanel>
-        <StackPanel Orientation="Vertical" Grid.Row="3">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Grid.Row="3">
             <Button Style="{StaticResource ButtonStyle}" Command="{Binding AddCommand}" Content="Добавить"/>
             <Button Style="{StaticResource ButtonStyle}" Command="{Binding ClearCommand}" Content="Очистить форму"/>
             <Button Style="{StaticResource ButtonStyle}" Command="{Binding SelectCommand}" Content="Выбрать"/>
