@@ -24,7 +24,7 @@ namespace FinalProject {
         private UserModel user;
         private string? repeatPassword;
         private Commands? registration, open_signin;
-        private Navigation navigation;
+        private WindowNavigate window;
         public string? Login {
             get { return user.Login; }
             set {
@@ -54,8 +54,8 @@ namespace FinalProject {
         }
         private bool CanOpen() { return true; }
         private void Open() {
-            navigation.NavigateSignIn(1);
-            navigation.NavigateRegistration(0);
+            window.WinOpen(0);
+            window.WinClose(Application.Current.Windows[0]);
         }
         public ICommand RegistrationCommand {
             get {
@@ -64,44 +64,48 @@ namespace FinalProject {
             }
         }
         private bool CanReg() {
-            return Login != null && Password.Length >= 8 && Password == RepeatPassword;
+            return Login != null && Password == RepeatPassword && Password != string.Empty;
         }
         private void Reg() {
-            var data = new { Login, Password };
-            try {
-                if (File.Exists("userdata.json")) {
-                    string currentData = File.ReadAllText("userdata.json");
-                    List<dynamic>? currentUsers = JsonConvert.DeserializeObject<List<dynamic>>(currentData);
-                    if (currentUsers.Any(u => u.Login == Login)) {
-                        MessageBox.Show("Пользователь с таким именем уже существует.", "Ошибка",
-                            MessageBoxButton.OK, MessageBoxImage.Error);
-                        return;
+            if(Password.Length >= 8) {
+                try {
+                    var data = new { Login, Password };
+                    if (File.Exists("json/userdata.json")) {
+                        string currentData = File.ReadAllText("json/userdata.json");
+                        List<dynamic>? currentUsers = JsonConvert.DeserializeObject<List<dynamic>>(currentData);
+                        if (currentUsers.Any(u => u.Login == Login)) {
+                            MessageBox.Show("Пользователь с таким именем уже существует.", "Ошибка",
+                                MessageBoxButton.OK, MessageBoxImage.Error);
+                            return;
+                        }
+                        currentUsers.Add(data);
+                        string newData = JsonConvert.SerializeObject(currentUsers, Formatting.Indented);
+                        File.WriteAllText("json/userdata.json", newData);
                     }
-                    currentUsers.Add(data);
-                    string newData = JsonConvert.SerializeObject(currentUsers, Formatting.Indented);
-                    File.WriteAllText("userdata.json", newData);
+                    else {
+                        List<dynamic> users = new List<dynamic> { data };
+                        string jsonData = JsonConvert.SerializeObject(users, Formatting.Indented);
+                        File.WriteAllText("json/userdata.json", jsonData);
+                    }
+                    window.WinOpen(2);
+                    window.WinClose(Application.Current.Windows[0]);
                 }
-                else {
-                    List<dynamic> users = new List<dynamic> { data };
-                    string jsonData = JsonConvert.SerializeObject(users, Formatting.Indented);
-                    File.WriteAllText("userdata.json", jsonData);
+                catch (Exception ex) {
+                    MessageBox.Show($"Ошибка сохранения в файл: {ex.Message}", "Ошибка",
+                        MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-                navigation.NavigateGallery();
-                navigation.NavigateRegistration(0);
             }
-            catch (Exception ex) {
-                MessageBox.Show($"Ошибка сохранения в файл: {ex.Message}", "Ошибка",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+            else MessageBox.Show($"Пароль должен быть минимум 8 символов!", "!",
+                        MessageBoxButton.OK, MessageBoxImage.Error);
         }
         public RegistrationVm() {
             user = UserModel.Example;
-            navigation = new Navigation();
+            window = new WindowNavigate();
         }
     }
     public class SignInVM : VMBase {
         private UserModel user;
-        private Navigation navigation;
+        private WindowNavigate window;
         private Commands? signin, open_reg;
         public string Login {
             get { return user.Login; }
@@ -125,8 +129,8 @@ namespace FinalProject {
         }
         private bool CanOpen() { return true; }
         private void Open() {
-            navigation.NavigateRegistration(1);
-            navigation.NavigateSignIn(0);
+            window.WinOpen(1);
+            window.WinClose(Application.Current.Windows[0]);
         }
         public ICommand SignInCommand {
             get {
@@ -137,13 +141,13 @@ namespace FinalProject {
         private bool CanSignIn() { return Login != null; }
         private void Sign() {
             try {
-                if (File.Exists("userdata.json")) {
-                    string data = File.ReadAllText("userdata.json");
+                if (File.Exists("json/userdata.json")) {
+                    string data = File.ReadAllText("json/userdata.json");
                     List<dynamic>? users = JsonConvert.DeserializeObject<List<dynamic>>(data);
                     var userAuthenticate = users?.FirstOrDefault(u => u.Login == Login && u.Password == Password);
                     if (userAuthenticate != null) {
-                        navigation.NavigateGallery();
-                        navigation.NavigateSignIn(0);
+                        window.WinOpen(2);
+                        window.WinClose(Application.Current.Windows[0]);
                     }
                     else {
                         MessageBox.Show("Неверный логин или пароль.", "Отказано",
@@ -162,7 +166,7 @@ namespace FinalProject {
         }
         public SignInVM() {
             user = UserModel.Example;
-            navigation = new Navigation();
+            window = new WindowNavigate();
         }
     }
     public class GalleryVM : VMBase {
@@ -228,13 +232,18 @@ namespace FinalProject {
         private void Last() => Position = MaxImages;
         public GalleryVM() {
             try {
-                string jsonContent = File.ReadAllText("../../../Resources/Images");
-                List<ImagesModel>? images = JsonConvert.DeserializeObject<List<ImagesModel>>(jsonContent);
-                foreach (var image in images) Images.Add(new ImagesVM(image));
-                if (Images.Count > 0) Position = 0;
-                maxImages = images.Count - 1;
+                string json = File.ReadAllText("json/images.json");
+                List<ImagesModel>? images = JsonConvert.DeserializeObject<List<ImagesModel>>(json);
+                if (images != null) {
+                    foreach (var image in images) Images.Add(new ImagesVM(image));
+                    if (Images.Count > 0) Position = 0;
+                    maxImages = images.Count - 1;
+                }
             }
-            catch (Exception ex) { MessageBox.Show("Ошибка: " + ex.Message); }
+            catch (Exception ex) {
+                MessageBox.Show($"Ошибка чтения файла: {ex.Message}", "!",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
     public class ImagesVM : VMBase {

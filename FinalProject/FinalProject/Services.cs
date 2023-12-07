@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace FinalProject {
@@ -24,20 +25,17 @@ namespace FinalProject {
             remove { CommandManager.RequerySuggested -= value; }
         }
     }
-    public class Navigation {
-        public void NavigateRegistration(int value) {
-            Registration view = new Registration();
-            if (value == 1) view.Show();
-            else view.Close();
-        }
-        public void NavigateSignIn(int value) {
-            SignIn view = new SignIn();
-            if (value == 1) view.Show();
-            else view.Close();
-        }
-        public void NavigateGallery() {
-            Gallery view = new Gallery();
+    public class WindowNavigate {
+        public void WinOpen(int value) {
+            Window view;
+            if(value == 0) view = new SignIn();
+            else if(value == 1) view = new Registration();
+            else view = new Gallery();
             view.Show();
+        }
+        public void WinClose(Window view) {
+            if (view == null) throw new ArgumentNullException(nameof(view));
+            view.Close();
         }
     }
     public class KeyValue {

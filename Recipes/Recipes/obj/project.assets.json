@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Recipes\\Recipes\\Recipes.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\C#_projects\\Recipes\\Recipes\\Recipes.csproj",
       "projectName": "Recipes",
-      "projectPath": "C:\\Users\\User\\Desktop\\Recipes\\Recipes\\Recipes.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\C#_projects\\Recipes\\Recipes\\Recipes.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Recipes\\Recipes\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\C#_projects\\Recipes\\Recipes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,7 +70,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

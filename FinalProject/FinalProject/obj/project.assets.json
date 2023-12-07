@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\FinalProject\\FinalProject\\FinalProject.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\C#_projects\\FinalProject\\FinalProject\\FinalProject.csproj",
       "projectName": "FinalProject",
-      "projectPath": "C:\\Users\\User\\Desktop\\FinalProject\\FinalProject\\FinalProject.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\C#_projects\\FinalProject\\FinalProject\\FinalProject.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\FinalProject\\FinalProject\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\C#_projects\\FinalProject\\FinalProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

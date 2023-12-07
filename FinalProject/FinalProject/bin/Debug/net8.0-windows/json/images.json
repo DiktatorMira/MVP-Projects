@@ -1,0 +1,62 @@
+[
+  {
+	"Name": "Art",
+	"Date": "01.12.2023",
+	"Author": "Danila Chervnoyi",
+	"Path": "../../Resources/Images/1.jpg",
+	"Ratings": [
+	  {
+	  	"Key": "Danila",
+	  	"Value": "4"
+	  }
+	]
+  },
+  {
+	"Name": "City",
+	"Date": "01.12.2023",
+	"Author": "Danila Chervnoyi",
+	"Path": "../../Resources/Images/2.jpg",
+	"Ratings": [
+	  {
+	  	"Key": "Danila",
+	  	"Value": "3"
+	  }
+	]
+  },
+  {
+	"Name": "Space",
+	"Date": "07.12.2023",
+	"Author": "Danila Chervnoyi",
+	"Path": "../../Resources/Images/3.jpg",
+	"Ratings": [
+	  {
+	  	"Key": "Danila",
+	  	"Value": "2"
+	  }
+	]
+  },
+  {
+	"Name": "Windows XP",
+	"Date": "07.12.2023",
+	"Author": "Danila Chervnoyi",
+	"Path": "../../Resources/Images/4.jpg",
+	"Ratings": [
+	  {
+	  	"Key": "Danila",
+	  	"Value": "5"
+	  }
+	]
+  },
+  {
+	"Name": "Lava",
+	"Date": "07.12.2023",
+	"Author": "Danila Chervnoyi",
+	"Path": "../../Resources/Images/5.jpg",
+	"Ratings": [
+	  {
+	  	"Key": "Danila",
+	  	"Value": "4"
+	  }
+	]
+  }
+]
